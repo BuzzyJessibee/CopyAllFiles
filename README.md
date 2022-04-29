@@ -6,7 +6,7 @@ Originally created for my father to easily copy all his music files to the root 
 ## Instructions
 1. Enter the absolute path for the root source directory (where all the subdirectories are located)
 2. Enter the absolute path for the destination directory
-3. The utility runs!
+3. The utility runs and copies all files in the src directory to the dest directory
 
 ## Specifics
 The utility makes sure that all filenames are unique in the destination directory by dynamically adding (1), (2) etc. to the end of the filename.
