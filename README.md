@@ -10,4 +10,4 @@ Originally created for my father to easily copy all his music files to the root 
 
 ## Specifics
 The utility makes sure that all filenames are unique in the destination directory by dynamically adding (1), (2) etc. to the end of the filename.
-For example, if you have 3 `Text.txt` files, the destination with have `Text.txt, Text (1).txt, Text (2).txt` 
+For example, if you have 3 `Text.txt` files, the destination will have `Text.txt, Text (1).txt, Text (2).txt` 
