@@ -8,17 +8,18 @@ the function edits the resulting filename to add (1), (2), etc.
 def make_paths_unique(destination, file):
 
    # Split the original file name (ex. Test.txt) to two variables (Test, txt)
-   filename, extension = file.split('.')
+   filename, extension = file.rsplit('.', 1)
 
    # What the destination dir would be without changes
-   path = destination + '\\' + file
+   path = os.path.join(destination, file)
 
    # File counter for (1), (2), etc
    counter = 1
 
    while os.path.exists(path):
+      new_filename = filename + " (" + str(counter) + ")" + "." + extension
       # Full path for the destination folder, including the new (1), (2), etc
-      path = destination + "\\" + filename + " (" + str(counter) + ")" + "." + extension
+      path = os.path.join(destination, new_filename) 
       counter += 1
    
    # We don't need the full filepath since we already have that,
